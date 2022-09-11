@@ -2,5 +2,6 @@
     "files.associations": {
         "adc_interface.h": "c",
         "bit_math.h": "c"
-    }
+    },
+    "cmake.sourceDirectory": "${workspaceFolder}/Test"
 }
