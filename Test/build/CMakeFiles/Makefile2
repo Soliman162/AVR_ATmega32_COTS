@@ -84,12 +84,12 @@ clean: CMakeFiles/burn.dir/clean
 CMakeFiles/ATmega32_COTS.elf.dir/all:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12 "Built target ATmega32_COTS.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles --progress-num=1,2,3,4,5,6,7,8,9,10,11,12,13 "Built target ATmega32_COTS.elf"
 .PHONY : CMakeFiles/ATmega32_COTS.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/ATmega32_COTS.elf.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/ATmega32_COTS.elf.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/ATmega32_COTS.elf.dir/rule
@@ -115,7 +115,7 @@ CMakeFiles/flash.dir/all: CMakeFiles/ATmega32_COTS.elf.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/flash.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/flash.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/flash.dir/rule
@@ -141,7 +141,7 @@ CMakeFiles/burn.dir/all: CMakeFiles/flash.dir/all
 
 # Build rule for subdir invocation for target.
 CMakeFiles/burn.dir/rule: cmake_check_build_system
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 12
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 13
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/burn.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/CMakeFiles 0
 .PHONY : CMakeFiles/burn.dir/rule

@@ -14,6 +14,7 @@ set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL")
 add_executable( ${PROJECT_NAME}.elf 
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/main.c
+
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/HC_05/HC05_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/L298/L298_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LED/LED_program.c
@@ -23,8 +24,10 @@ add_executable( ${PROJECT_NAME}.elf
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/01-DIO/DIO_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/02-UART/UART_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1/TIMER1_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC/ADC_program.c
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1/TIMER1_program.c
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-CPU_CORE/CPU_CORE_program.c
+                    
 )  
 
 target_include_directories( ${PROJECT_NAME}.elf PUBLIC
@@ -33,6 +36,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/02-UART
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-CPU_CORE
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/L298
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/HC_05

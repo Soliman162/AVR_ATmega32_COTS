@@ -9,11 +9,25 @@
 
 void Timer1_voidInit(void)
 {
-    
+    TCCR1A_REG = 0b00000000;
+    TCCR1B_REG = 0b00000010;
 }
-void Timer1_voidDelay_ms(u16 Copy_u16Delay)
+
+void Timer1_voidEnableOVERFLOW_INTERRUPT(void)
 {
-    
+    SETBIT(TIMSK_REG,TIMER1_OVERFLOW_INT_Enable_BIT_NUM);
+}
+void Timer1_voidDelay_Micro_Seconds_Sync(u16 Copy_u16Delay_micro_Seconds)
+{
+    TCNT1_L_H_REG = TIMER1_OVER_FLOW_VALUE - Copy_u16Delay_micro_Seconds;
+    while( GETBIT(TIFR_REG,TIMER1_OVERFLOW_FLAG_BIT_NUM) == 0 );
+    SETBIT(TIFR_REG,TIMER1_OVERFLOW_FLAG_BIT_NUM);
+}
+/*
+void Timer1_voidDelay_Micro_Seconds_Async(u16 Copy_u16Delay_micro_Seconds, void *ptr_ISR(void))
+{
+    TCNT1_L_H_REG = TIMER1_OVER_FLOW_VALUE - Copy_u16Delay_micro_Seconds;
+    TIMER_1_OVERFLOW_ISR = ptr_ISR;
 }
 
-
+*/

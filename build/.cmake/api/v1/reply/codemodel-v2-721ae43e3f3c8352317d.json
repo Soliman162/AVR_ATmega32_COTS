@@ -43,21 +43,21 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "ATmega32_COTS.elf::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-ATmega32_COTS.elf-Debug-69436148c89ae70a31b4.json",
+					"jsonFile" : "target-ATmega32_COTS.elf-Debug-00ed8b6ef9da5b5f6ac1.json",
 					"name" : "ATmega32_COTS.elf",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "burn::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-burn-Debug-7d918d9e2ebe0ee3ec91.json",
+					"jsonFile" : "target-burn-Debug-b73388df01d362dc28c7.json",
 					"name" : "burn",
 					"projectIndex" : 0
 				},
 				{
 					"directoryIndex" : 0,
 					"id" : "flash::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-flash-Debug-be639e7b07fcaa5585ef.json",
+					"jsonFile" : "target-flash-Debug-818b0971a5928e34e46a.json",
 					"name" : "flash",
 					"projectIndex" : 0
 				}

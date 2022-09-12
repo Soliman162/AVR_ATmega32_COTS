@@ -3,5 +3,11 @@
 		{
 			"path": "."
 		}
-	]
+	],
+	"settings": {
+		"files.associations": {
+			"led_interface.h": "c",
+			"bit_math.h": "c"
+		}
+	}
 }
