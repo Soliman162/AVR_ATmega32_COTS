@@ -130,6 +130,19 @@ ATmega32_COTS.elf/fast:
 .PHONY : ATmega32_COTS.elf/fast
 
 #=============================================================================
+# Target rules for targets named build
+
+# Build rule for target.
+build: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 build
+.PHONY : build
+
+# fast build rule for target.
+build/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/build
+.PHONY : build/fast
+
+#=============================================================================
 # Target rules for targets named flash
 
 # Build rule for target.
@@ -143,17 +156,17 @@ flash/fast:
 .PHONY : flash/fast
 
 #=============================================================================
-# Target rules for targets named burn
+# Target rules for targets named remove
 
 # Build rule for target.
-burn: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 burn
-.PHONY : burn
+remove: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 remove
+.PHONY : remove
 
 # fast build rule for target.
-burn/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/build
-.PHONY : burn/fast
+remove/fast:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/remove.dir/build.make CMakeFiles/remove.dir/build
+.PHONY : remove/fast
 
 home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.o: home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c.o
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.o
@@ -451,8 +464,9 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... burn"
+	@echo "... build"
 	@echo "... flash"
+	@echo "... remove"
 	@echo "... ATmega32_COTS.elf"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.i"

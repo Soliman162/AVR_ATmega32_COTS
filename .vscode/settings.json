@@ -3,5 +3,6 @@
         "adc_interface.h": "c",
         "bit_math.h": "c"
     },
-    "cmake.sourceDirectory": "${workspaceFolder}/Test"
+    "cmake.sourceDirectory": "${workspaceFolder}/Test",
+    "C_Cpp.errorSquiggles": "Disabled"
 }

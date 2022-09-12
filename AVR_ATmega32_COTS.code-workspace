@@ -7,7 +7,10 @@
 	"settings": {
 		"files.associations": {
 			"led_interface.h": "c",
-			"bit_math.h": "c"
+			"bit_math.h": "c",
+			"timer1_interface.h": "c",
+			"dio_interface.h": "c",
+			"timer1_private.h": "c"
 		}
 	}
 }

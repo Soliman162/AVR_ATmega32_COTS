@@ -66,8 +66,8 @@ include CMakeFiles/flash.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/flash.dir/progress.make
 
-CMakeFiles/flash: ATmega32_COTS.elf
-	avr-objcopy -j .text -j .data -O ihex ATmega32_COTS.elf ATmega32_COTS.hex
+CMakeFiles/flash:
+	avrdude -c usbasp -p m32 -B 0.5 -U flash:w:"ATmega32_COTS.hex":a
 
 flash: CMakeFiles/flash
 flash: CMakeFiles/flash.dir/build.make

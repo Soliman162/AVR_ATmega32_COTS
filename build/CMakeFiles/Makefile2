@@ -64,7 +64,7 @@ CMAKE_BINARY_DIR = /home/soliman/AVR/ATmega32/AVR_COTS/build
 
 # The main recursive "all" target.
 all: CMakeFiles/ATmega32_COTS.elf.dir/all
-all: CMakeFiles/flash.dir/all
+all: CMakeFiles/build.dir/all
 .PHONY : all
 
 # The main recursive "preinstall" target.
@@ -73,8 +73,9 @@ preinstall:
 
 # The main recursive "clean" target.
 clean: CMakeFiles/ATmega32_COTS.elf.dir/clean
+clean: CMakeFiles/build.dir/clean
 clean: CMakeFiles/flash.dir/clean
-clean: CMakeFiles/burn.dir/clean
+clean: CMakeFiles/remove.dir/clean
 .PHONY : clean
 
 #=============================================================================
@@ -104,10 +105,36 @@ CMakeFiles/ATmega32_COTS.elf.dir/clean:
 .PHONY : CMakeFiles/ATmega32_COTS.elf.dir/clean
 
 #=============================================================================
+# Target rules for target CMakeFiles/build.dir
+
+# All Build rule for target.
+CMakeFiles/build.dir/all: CMakeFiles/ATmega32_COTS.elf.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num= "Built target build"
+.PHONY : CMakeFiles/build.dir/all
+
+# Build rule for subdir invocation for target.
+CMakeFiles/build.dir/rule: cmake_check_build_system
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles 13
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/build.dir/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles 0
+.PHONY : CMakeFiles/build.dir/rule
+
+# Convenience name for target.
+build: CMakeFiles/build.dir/rule
+.PHONY : build
+
+# clean rule for target.
+CMakeFiles/build.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/build.dir/build.make CMakeFiles/build.dir/clean
+.PHONY : CMakeFiles/build.dir/clean
+
+#=============================================================================
 # Target rules for target CMakeFiles/flash.dir
 
 # All Build rule for target.
-CMakeFiles/flash.dir/all: CMakeFiles/ATmega32_COTS.elf.dir/all
+CMakeFiles/flash.dir/all: CMakeFiles/build.dir/all
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/depend
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/flash.dir/build.make CMakeFiles/flash.dir/build
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num= "Built target flash"
@@ -130,30 +157,30 @@ CMakeFiles/flash.dir/clean:
 .PHONY : CMakeFiles/flash.dir/clean
 
 #=============================================================================
-# Target rules for target CMakeFiles/burn.dir
+# Target rules for target CMakeFiles/remove.dir
 
 # All Build rule for target.
-CMakeFiles/burn.dir/all: CMakeFiles/flash.dir/all
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/depend
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/build
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num= "Built target burn"
-.PHONY : CMakeFiles/burn.dir/all
+CMakeFiles/remove.dir/all: CMakeFiles/build.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/remove.dir/build.make CMakeFiles/remove.dir/depend
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/remove.dir/build.make CMakeFiles/remove.dir/build
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num= "Built target remove"
+.PHONY : CMakeFiles/remove.dir/all
 
 # Build rule for subdir invocation for target.
-CMakeFiles/burn.dir/rule: cmake_check_build_system
+CMakeFiles/remove.dir/rule: cmake_check_build_system
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles 13
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/burn.dir/all
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 CMakeFiles/remove.dir/all
 	$(CMAKE_COMMAND) -E cmake_progress_start /home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles 0
-.PHONY : CMakeFiles/burn.dir/rule
+.PHONY : CMakeFiles/remove.dir/rule
 
 # Convenience name for target.
-burn: CMakeFiles/burn.dir/rule
-.PHONY : burn
+remove: CMakeFiles/remove.dir/rule
+.PHONY : remove
 
 # clean rule for target.
-CMakeFiles/burn.dir/clean:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/burn.dir/build.make CMakeFiles/burn.dir/clean
-.PHONY : CMakeFiles/burn.dir/clean
+CMakeFiles/remove.dir/clean:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/remove.dir/build.make CMakeFiles/remove.dir/clean
+.PHONY : CMakeFiles/remove.dir/clean
 
 #=============================================================================
 # Special targets to cleanup operation of make.

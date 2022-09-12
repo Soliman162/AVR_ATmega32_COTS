@@ -44,6 +44,7 @@ set(CMAKE_MAKEFILE_PRODUCTS
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
   "CMakeFiles/ATmega32_COTS.elf.dir/DependInfo.cmake"
+  "CMakeFiles/build.dir/DependInfo.cmake"
   "CMakeFiles/flash.dir/DependInfo.cmake"
-  "CMakeFiles/burn.dir/DependInfo.cmake"
+  "CMakeFiles/remove.dir/DependInfo.cmake"
   )

@@ -42,7 +42,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-mmcu=atmega32 -O1 -DF_CPU=8000000UL -g"
+					"fragment" : "-mmcu=atmega32 -O1 -DF_CPU=8000000UL  -g"
 				}
 			],
 			"includes" : 
@@ -120,7 +120,7 @@
 		"commandFragments" : 
 		[
 			{
-				"fragment" : "-mmcu=atmega32 -O1 -DF_CPU=8000000UL -g",
+				"fragment" : "-mmcu=atmega32 -O1 -DF_CPU=8000000UL  -g",
 				"role" : "flags"
 			},
 			{

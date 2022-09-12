@@ -3,6 +3,7 @@
 #include  <util/delay.h>
 
 #include "DIO_interface.h"
+#include "TIMER1_interface.h"
 
 #include "CLCD_interface.h"
 #include "CLCD_config.h"
@@ -15,19 +16,19 @@ void CLCD_voidInit(void){
 	SetPin_enumDirection  (CLCD_CONTROL_PORT ,CLCD_CONTROL_PIN_RS, DIO_OUTPUT);
 	SetPin_enumDirection  (CLCD_CONTROL_PORT ,CLCD_CONTROL_PIN_EN, DIO_OUTPUT);
 
-	_delay_ms(50);
+	Timer1_voidDelay_Micro_Seconds_Sync(50000);
 	//FUNCTION SET COMMEND
 	CLCD_voidSendCommand(0b00111000);
-	_delay_ms(1);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 	//DISPLAY ON / OFF
 	CLCD_voidSendCommand(0b00001110);
-	_delay_ms(1);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 	//DISPLAY CLEAR
 	CLCD_voidSendCommand(0b00000001);
-	_delay_ms(3);
+	Timer1_voidDelay_Micro_Seconds_Sync(3000);
 	//DISPLAY ENTRY MODE
 	CLCD_voidSendCommand(0b00000010);
-	_delay_ms(3);
+	Timer1_voidDelay_Micro_Seconds_Sync(3000);
 
 }
 void CLCD_voidSend_Data(u8 Copy_u8Data){
@@ -38,9 +39,9 @@ void CLCD_voidSend_Data(u8 Copy_u8Data){
 	SetPin_enumValue     (CLCD_CONTROL_PORT , CLCD_CONTROL_PIN_RS , DIO_HIGH);
 
 	SetPin_enumValue     (CLCD_CONTROL_PORT , CLCD_CONTROL_PIN_EN , DIO_HIGH);
-	_delay_ms(1);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 	SetPin_enumValue     (CLCD_CONTROL_PORT , CLCD_CONTROL_PIN_EN , DIO_LOW );
-	_delay_ms(1);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 
 }
 void CLCD_voidSendCommand(u8 Copy_u8Command){
@@ -51,9 +52,9 @@ void CLCD_voidSendCommand(u8 Copy_u8Command){
 	SetPin_enumValue     (CLCD_CONTROL_PORT , CLCD_CONTROL_PIN_RS , DIO_LOW);
 
 	SetPin_enumValue     (CLCD_CONTROL_PORT , CLCD_CONTROL_PIN_EN , DIO_HIGH);
-	_delay_ms(1);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 	SetPin_enumValue     (CLCD_CONTROL_PORT , CLCD_CONTROL_PIN_EN , DIO_LOW );
-	_delay_ms(1);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 }
 void CLCD_voidSend_String(u8 *Copy_u8PtrString){
 
@@ -115,12 +116,12 @@ void Send_voidExtraString   (u8 Copy_u8Row , u8 Copy_u8Col  ){
 
 void Clear_voidCLCD(void){
 
-	 CLCD_voidSendCommand(0b00000001);
-	 _delay_ms(1);
+	CLCD_voidSendCommand(0b00000001);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 }
 
 void Display_voidOff_On(void){
 
-	 CLCD_voidSendCommand(0b00001000);
-	 _delay_ms(1);
+	CLCD_voidSendCommand(0b00001000);
+	Timer1_voidDelay_Micro_Seconds_Sync(1000);
 }

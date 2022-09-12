@@ -8,7 +8,7 @@ set(CMAKE_CXX_COMPILER avr-g++ CACHE STRING "C++ compiler" FORCE)
 set(CMAKE_C_COMPILER avr-gcc CACHE STRING "C compiler" FORCE)
 set(CMAKE_OBJCOPY      avr-objcopy CACHE STRING "avr-objcopy" FORCE)
 
-set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL")
+set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL ")
 
 
 add_executable( ${PROJECT_NAME}.elf 
@@ -49,13 +49,18 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                            
 )     
 
-add_custom_target(flash ALL
+add_custom_target(build ALL
                 DEPENDS ${PROJECT_NAME}.elf
                 COMMAND avr-objcopy -j .text -j .data -O ihex ${PROJECT_NAME}.elf ${PROJECT_NAME}.hex
                 ) 
                 
-add_custom_target(burn 
-                DEPENDS flash 
+add_custom_target(flash 
+                DEPENDS build 
                 COMMAND  avrdude -c usbasp -p m32 -B 0.5 -U flash:w:"${PROJECT_NAME}.hex":a 
+)
+
+add_custom_target(remove
+                    DEPENDS build 
+                    COMMAND  rm -rf ${CMAKE_CURRENT_SOURCE_DIR}/build
 )
 

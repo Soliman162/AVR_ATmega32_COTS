@@ -6,5 +6,6 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLC
  /usr/lib/gcc/avr/5.4.0/include/stdint.h /usr/lib/avr/include/stdint.h \
  /usr/lib/avr/include/util/delay_basic.h /usr/lib/avr/include/math.h \
  /home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/01-DIO/DIO_interface.h \
+ /home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/04-Timer1/TIMER1_interface.h \
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_interface.h \
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_config.h
