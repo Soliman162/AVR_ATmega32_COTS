@@ -4,12 +4,6 @@
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
-  /usr/lib/avr/include/util/delay.h \
-  /usr/lib/avr/include/inttypes.h \
-  /usr/lib/gcc/avr/5.4.0/include/stdint.h \
-  /usr/lib/avr/include/stdint.h \
-  /usr/lib/avr/include/util/delay_basic.h \
-  /usr/lib/avr/include/math.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_interface.h \
@@ -55,6 +49,13 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_interface.h
 
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_private.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_config.h
+
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
@@ -82,39 +83,43 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Time
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_private.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_config.h
 
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c \
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_program.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_private.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_config.h
-
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_private.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_config.h
+  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_interface.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_private.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_config.h
 
 CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h \
+  /usr/lib/avr/include/util/delay.h \
+  /usr/lib/avr/include/inttypes.h \
+  /usr/lib/gcc/avr/5.4.0/include/stdint.h \
+  /usr/lib/avr/include/stdint.h \
+  /usr/lib/avr/include/util/delay_basic.h \
+  /usr/lib/avr/include/math.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h
 
 
+/usr/lib/avr/include/util/delay_basic.h:
+
+/usr/lib/gcc/avr/5.4.0/include/stdint.h:
+
+/usr/lib/avr/include/stdint.h:
+
+/usr/lib/avr/include/inttypes.h:
+
+/usr/lib/avr/include/util/delay.h:
+
 ../main.c:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_config.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_private.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_private.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_private.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_interface.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_private.h:
 
@@ -126,41 +131,45 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_private.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_program.c:
-
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_private.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_config.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_private.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_private.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_interface.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_interface.h:
-
-/usr/lib/avr/include/math.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_interface.h:
-
-/usr/lib/gcc/avr/5.4.0/include/stdint.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_interface.h:
-
-/usr/lib/avr/include/util/delay_basic.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_config.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_program.c:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c:
+/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_config.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_config.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_interface.h:
 
@@ -168,33 +177,9 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_private.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_config.h:
-
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_config.h:
 
-/usr/lib/avr/include/inttypes.h:
-
-/usr/lib/avr/include/util/delay.h:
-
-/usr/lib/avr/include/stdint.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_private.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_config.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_interface.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_program.c:
 
@@ -208,4 +193,20 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_program.c:
 
+/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_config.h:
+
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h:
+
+/usr/lib/avr/include/math.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_private.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_config.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_private.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c:
