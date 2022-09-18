@@ -312,6 +312,30 @@ home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.s
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.s
 
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.o: home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.i: home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.s: home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.s
+
 home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.o: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.o
 
@@ -432,29 +456,29 @@ home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c.s
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c.s
 
-home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.o: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.o
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.o
+home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.o: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.o
 
 # target to build an object file
-home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.o
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.o
+home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o
 
-home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.i: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.i
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.i
+home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.i: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.i
 
 # target to preprocess a source file
-home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.i
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.i
+home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.i
 
-home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.s: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.s
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.s
+home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.s: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.s
 
 # target to generate assembly for a file
-home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.s
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.s
+home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -510,6 +534,9 @@ help:
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.s"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.s"
@@ -525,9 +552,9 @@ help:
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.s"
-	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.o"
-	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.i"
-	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"
