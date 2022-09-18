@@ -10,7 +10,8 @@
 			"bit_math.h": "c",
 			"timer1_interface.h": "c",
 			"dio_interface.h": "c",
-			"timer1_private.h": "c"
+			"timer1_private.h": "c",
+			"timer1_config.h": "c"
 		}
 	}
 }

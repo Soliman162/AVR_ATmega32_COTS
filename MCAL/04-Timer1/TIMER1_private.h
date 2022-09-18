@@ -20,8 +20,10 @@
 #define TIMER1_OVERFLOW_INT_Enable_BIT_NUM    2
 /******************************************************************************************************************************/
 
-
-//void Timer1_OVF_ISR() __attribute__ ((interrupt ("IRQ")));
+void __vector_6 (void) __attribute__((signal));
+void __vector_7 (void) __attribute__((signal));
+void __vector_8 (void) __attribute__((signal));
+void __vector_9 (void) __attribute__((signal));
 
 
 
