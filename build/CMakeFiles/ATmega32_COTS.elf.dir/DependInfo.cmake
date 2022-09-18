@@ -19,6 +19,7 @@ set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c.o" "gcc" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c.o.d"
   "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_program.c" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_program.c.o" "gcc" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_program.c.o.d"
   "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c.o" "gcc" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c.o.d"
+  "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.o" "gcc" "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c.o.d"
   "/home/soliman/AVR/ATmega32/AVR_COTS/Test/main.c" "CMakeFiles/ATmega32_COTS.elf.dir/main.c.o" "gcc" "CMakeFiles/ATmega32_COTS.elf.dir/main.c.o.d"
   )
 

@@ -11,6 +11,7 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLC
   /usr/lib/avr/include/util/delay_basic.h \
   /usr/lib/avr/include/math.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_config.h
 
@@ -113,7 +114,7 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_config.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_program.c:
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_private.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h:
 
@@ -127,15 +128,13 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h:
 
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c:
+
 /usr/lib/avr/include/util/delay_basic.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_config.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_private.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h:
 
@@ -157,15 +156,19 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /usr/lib/avr/include/stdint.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c:
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_private.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_config.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_interface.h:
 
@@ -182,5 +185,3 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_private.h:

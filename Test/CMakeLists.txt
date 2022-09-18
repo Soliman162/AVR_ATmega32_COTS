@@ -27,6 +27,7 @@ add_executable( ${PROJECT_NAME}.elf
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC/ADC_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1/TIMER1_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-CPU_CORE/CPU_CORE_program.c
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/WDT/WDT_program.c
                     
 )  
 
@@ -37,6 +38,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-CPU_CORE
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/06-WDT
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/L298
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/HC_05

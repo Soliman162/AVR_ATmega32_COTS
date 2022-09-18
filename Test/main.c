@@ -17,10 +17,9 @@ int main(void)
     while(1)
     {
         LED_voidON(&LED_1);
-        Timer1_voidDelay_Micro_Seconds_Sync(1000000);
+        Timer1_voidDelay_Micro_Seconds(1000000);
         LED_voidOFF(&LED_1);
-        Timer1_voidDelay_Micro_Seconds_Sync(1000000);
-
+        Timer1_voidDelay_Micro_Seconds(1000000);
     }
 
     return 0;

@@ -16,10 +16,10 @@ void Timer1_voidEnableOVERFLOW_INTERRUPT(void)
 {
     SETBIT(TIMSK_REG,TIMER1_OVERFLOW_INT_Enable_BIT_NUM);
 }
-void Timer1_voidDelay_Micro_Seconds_Sync(u32 Copy_u16Delay_micro_Seconds)
-{
 
-    while (Copy_u16Delay_micro_Seconds>TIMER1_OVER_FLOW_VALUE)
+void Timer1_voidDelay_Micro_Seconds(u32 Copy_u16Delay_micro_Seconds)
+{
+    while (Copy_u16Delay_micro_Seconds > TIMER1_OVER_FLOW_VALUE)
     {
         TCNT1_L_H_REG = 0;
         /*check over flow*/
