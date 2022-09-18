@@ -25,7 +25,7 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 14,
+				"line" : 13,
 				"parent" : 0
 			},
 			{
@@ -65,11 +65,7 @@
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/05-CPU_CORE"
-				},
-				{
-					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/06-WDT"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/05-WDT"
 				},
 				{
 					"backtrace" : 2,
@@ -97,7 +93,15 @@
 				},
 				{
 					"backtrace" : 2,
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/SSD"
+				},
+				{
+					"backtrace" : 2,
 					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../LIB"
+				},
+				{
+					"backtrace" : 2,
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../LIB/CPU_CORE"
 				}
 			],
 			"language" : "C",
@@ -115,7 +119,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -160,7 +165,8 @@
 				9,
 				10,
 				11,
-				12
+				12,
+				13
 			]
 		}
 	],
@@ -211,6 +217,12 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
+			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c",
+			"sourceGroupIndex" : 0
+		},
+		{
+			"backtrace" : 1,
+			"compileGroupIndex" : 0,
 			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c",
 			"sourceGroupIndex" : 0
 		},
@@ -235,13 +247,13 @@
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-CPU_CORE/CPU_CORE_program.c",
+			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_program.c",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 1,
 			"compileGroupIndex" : 0,
-			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/WDT/WDT_program.c",
+			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c",
 			"sourceGroupIndex" : 0
 		}
 	],

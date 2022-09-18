@@ -7,7 +7,6 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_CXX_COMPILER avr-g++ CACHE STRING "C++ compiler" FORCE)
 set(CMAKE_C_COMPILER avr-gcc CACHE STRING "C compiler" FORCE)
 set(CMAKE_OBJCOPY      avr-objcopy CACHE STRING "avr-objcopy" FORCE)
-
 set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL ")
 
 
@@ -21,14 +20,15 @@ add_executable( ${PROJECT_NAME}.elf
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LM35/LM35_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LDR/LDR_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/CLCD/CLCD_program.c
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/SSD/SSD_program.c
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/01-DIO/DIO_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/02-UART/UART_program.c
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC/ADC_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1/TIMER1_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-CPU_CORE/CPU_CORE_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/WDT/WDT_program.c
-                    
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1/TIMER1_program.c                            
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-WDT/WDT_program.c
+
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../LIB/CPU_CORE/CPU_CORE_program.c
 )  
 
 target_include_directories( ${PROJECT_NAME}.elf PUBLIC
@@ -37,8 +37,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/02-UART
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC
                             ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-CPU_CORE
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/06-WDT
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-WDT
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/L298
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/HC_05
@@ -46,8 +45,11 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LDR
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LM35
                             ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/CLCD
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/SSD
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../LIB
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../LIB/CPU_CORE
+
                            
 )     
 
@@ -62,7 +64,6 @@ add_custom_target(flash
 )
 
 add_custom_target(remove
-                    DEPENDS build 
                     COMMAND  rm -rf ${CMAKE_CURRENT_SOURCE_DIR}/build
 )
 

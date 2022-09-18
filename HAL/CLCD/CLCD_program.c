@@ -1,6 +1,5 @@
 #include "std_types.h"
 #include "BIT_MATH.h"
-#include  <util/delay.h>
 
 #include "DIO_interface.h"
 #include "TIMER1_interface.h"
