@@ -25,8 +25,10 @@ file(REMOVE_RECURSE
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c.o.d"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_program.c.o"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_program.c.o.d"
-  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_program.c.o"
-  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-WDT/WDT_program.c.o.d"
+  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_program.c.o"
+  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_program.c.o.d"
+  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o"
+  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o.d"
   "CMakeFiles/ATmega32_COTS.elf.dir/main.c.o"
   "CMakeFiles/ATmega32_COTS.elf.dir/main.c.o.d"
 )
