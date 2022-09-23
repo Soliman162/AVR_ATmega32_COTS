@@ -39,26 +39,23 @@ add_executable( ${PROJECT_NAME}.elf
 
 target_include_directories( ${PROJECT_NAME}.elf PUBLIC
 
-                            ${MCAL_PATH}/MCAL/01-DIO
-                            ${MCAL_PATH}/MCAL/02-UART
-                            ${MCAL_PATH}/MCAL/03-ADC
-                            ${MCAL_PATH}/MCAL/04-Timer1
-                            ${MCAL_PATH}/MCAL/05-Timer0
-                            ${MCAL_PATH}/MCAL/06-WDT
+                            ${MCAL_PATH}/01-DIO
+                            ${MCAL_PATH}/02-UART
+                            ${MCAL_PATH}/03-ADC
+                            ${MCAL_PATH}/04-Timer1
+                            ${MCAL_PATH}/05-Timer0
+                            ${MCAL_PATH}/06-WDT
 
-                            ${HAL_PATH}/HAL/L298
-                            ${HAL_PATH}/HAL/HC_05
-                            ${HAL_PATH}/HAL/LED
-                            ${HAL_PATH}/HAL/LDR
-                            ${HAL_PATH}/HAL/LM35
-                            ${HAL_PATH}/HAL/CLCD
-                            ${HAL_PATH}/HAL/SSD
+                            ${HAL_PATH}/L298
+                            ${HAL_PATH}/HC_05
+                            ${HAL_PATH}/LED
+                            ${HAL_PATH}/LDR
+                            ${HAL_PATH}/LM35
+                            ${HAL_PATH}/CLCD
+                            ${HAL_PATH}/SSD
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../LIB
-
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES
-
-                           
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES   
 )     
 
 add_custom_target(build ALL
@@ -72,6 +69,6 @@ add_custom_target(flash
 )
 
 add_custom_target(remove
-                    COMMAND  rm -rf ${CMAKE_CURRENT_SOURCE_DIR}/build
+                    COMMAND  rm -rf ${CMAKE_CURRENT_SOURCE_DIR}/build/*
 )
 

@@ -1,10 +1,3 @@
-/*
- * DIO_private.h
- *
- *  Created on: Mar 7, 2021
- *      Author: DELL
- */
-
 #ifndef MCAL_01_DIO_DIO_PRIVATE_H_
 #define MCAL_01_DIO_DIO_PRIVATE_H_
 

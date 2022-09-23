@@ -49,55 +49,55 @@
 			[
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/MCAL/01-DIO"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/01-DIO"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/MCAL/02-UART"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/02-UART"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/MCAL/03-ADC"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/03-ADC"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/MCAL/04-Timer1"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/04-Timer1"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/MCAL/05-Timer0"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/05-Timer0"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/MCAL/06-WDT"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../MCAL/06-WDT"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HAL/L298"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/L298"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HAL/HC_05"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HC_05"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HAL/LED"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/LED"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HAL/LDR"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/LDR"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HAL/LM35"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/LM35"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HAL/CLCD"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/CLCD"
 				},
 				{
 					"backtrace" : 2,
-					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/HAL/SSD"
+					"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/Test/../HAL/SSD"
 				},
 				{
 					"backtrace" : 2,

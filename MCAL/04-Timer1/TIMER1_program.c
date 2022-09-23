@@ -3,8 +3,6 @@
 
 #include "TIMER1_interface.h"
 #include "TIMER1_private.h"
-#include "TIMER1_config.h"
-
 
 void Timer1_voidInit(void)
 {

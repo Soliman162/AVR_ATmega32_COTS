@@ -67,7 +67,7 @@ include CMakeFiles/remove.dir/compiler_depend.make
 include CMakeFiles/remove.dir/progress.make
 
 CMakeFiles/remove:
-	rm -rf /home/soliman/AVR/ATmega32/AVR_COTS/Test/build
+	rm -rf /home/soliman/AVR/ATmega32/AVR_COTS/Test/build/*
 
 remove: CMakeFiles/remove
 remove: CMakeFiles/remove.dir/build.make

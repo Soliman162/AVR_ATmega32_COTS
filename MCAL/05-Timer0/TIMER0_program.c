@@ -5,8 +5,6 @@
 
 #include "TIMER0_interface.h"
 #include "TIMER0_private.h"
-#include "TIMER1_config.h"
-
 
 void Timer0_voidInit(void)
 {
