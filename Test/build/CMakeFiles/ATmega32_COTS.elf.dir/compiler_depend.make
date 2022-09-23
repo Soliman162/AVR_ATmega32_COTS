@@ -49,13 +49,6 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_interface.h
 
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_private.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_config.h
-
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
@@ -110,6 +103,8 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 ../main.c:
 
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_config.h:
+
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_private.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_interface.h:
@@ -132,27 +127,17 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_private.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_private.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_config.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_private.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_config.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_program.c:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_program.c:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c:
-
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_private.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_interface.h:
 
@@ -180,6 +165,10 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h:
 
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_config.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c:
+
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_config.h:
@@ -191,8 +180,6 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_interface.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_config.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h:
 

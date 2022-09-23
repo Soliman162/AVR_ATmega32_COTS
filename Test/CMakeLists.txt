@@ -10,47 +10,53 @@ set(CMAKE_OBJCOPY      avr-objcopy CACHE STRING "avr-objcopy" FORCE)
 set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL ")
 
 
+set(MCAL_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL )
+set(HAL_PATH   ${CMAKE_CURRENT_SOURCE_DIR}/../HAL  )
+
+
 add_executable( ${PROJECT_NAME}.elf 
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/main.c
 
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/HC_05/HC05_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/L298/L298_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LED/LED_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LM35/LM35_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LDR/LDR_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/CLCD/CLCD_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/SSD/SSD_program.c
+                            ${HAL_PATH}/HC_05/HC05_program.c
+                            ${HAL_PATH}/L298/L298_program.c
+                            ${HAL_PATH}/LED/LED_program.c
+                            ${HAL_PATH}/LM35/LM35_program.c
+                            ${HAL_PATH}/LDR/LDR_program.c
+                            ${HAL_PATH}/CLCD/CLCD_program.c
+                            ${HAL_PATH}/SSD/SSD_program.c
 
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/01-DIO/DIO_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/02-UART/UART_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC/ADC_program.c
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1/TIMER1_program.c  
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-Timer0/TIMER0_program.c                                                      
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/06-WDT/WDT_program.c
+                            ${MCAL_PATH}/01-DIO/DIO_program.c
+                            ${MCAL_PATH}/02-UART/UART_program.c
+                            ${MCAL_PATH}/03-ADC/ADC_program.c
+                            ${MCAL_PATH}/04-Timer1/TIMER1_program.c  
+                            ${MCAL_PATH}/05-Timer0/TIMER0_program.c                                                      
+                            ${MCAL_PATH}/06-WDT/WDT_program.c
 
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../LIB/CPU_CORE/CPU_CORE_program.c
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES/SERVICES_progarm.c
+
 )  
 
 target_include_directories( ${PROJECT_NAME}.elf PUBLIC
 
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/01-DIO
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/02-UART
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/03-ADC
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/04-Timer1
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/05-Timer0
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL/06-WDT
+                            ${MCAL_PATH}/MCAL/01-DIO
+                            ${MCAL_PATH}/MCAL/02-UART
+                            ${MCAL_PATH}/MCAL/03-ADC
+                            ${MCAL_PATH}/MCAL/04-Timer1
+                            ${MCAL_PATH}/MCAL/05-Timer0
+                            ${MCAL_PATH}/MCAL/06-WDT
 
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/L298
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/HC_05
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LED
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LDR
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/LM35
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/CLCD
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../HAL/SSD
+                            ${HAL_PATH}/HAL/L298
+                            ${HAL_PATH}/HAL/HC_05
+                            ${HAL_PATH}/HAL/LED
+                            ${HAL_PATH}/HAL/LDR
+                            ${HAL_PATH}/HAL/LM35
+                            ${HAL_PATH}/HAL/CLCD
+                            ${HAL_PATH}/HAL/SSD
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../LIB
-                            ${CMAKE_CURRENT_SOURCE_DIR}/../LIB/CPU_CORE
+
+                            ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES
 
                            
 )     

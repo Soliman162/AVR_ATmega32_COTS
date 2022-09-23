@@ -1,8 +1,8 @@
-#ifndef CPU_CORE_PRIVATE_H
-#define CPU_CORE_PRIVATE_H
+#ifndef SERVICES_PRIVATE_H
+#define SERVICES_PRIVATE_H
 
-
-
+#define ENABLE      1
+#define DISABLE     0
 
 /***************************************************CPU Core Registers macros****************************************************/
 #define STATUS_REG  *((volatile u8*)0x5F)

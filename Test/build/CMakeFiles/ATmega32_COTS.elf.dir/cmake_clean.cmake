@@ -15,8 +15,6 @@ file(REMOVE_RECURSE
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.o.d"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o.d"
-  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c.o"
-  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_program.c.o.d"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o.d"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_program.c.o"
@@ -29,6 +27,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_program.c.o.d"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o"
   "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o.d"
+  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o"
+  "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o.d"
   "CMakeFiles/ATmega32_COTS.elf.dir/main.c.o"
   "CMakeFiles/ATmega32_COTS.elf.dir/main.c.o.d"
 )

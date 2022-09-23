@@ -12,7 +12,11 @@
 			"dio_interface.h": "c",
 			"timer1_private.h": "c",
 			"timer1_config.h": "c",
-			"timer0_private.h": "c"
+			"timer0_private.h": "c",
+			"services_interface.h": "c",
+			"services_private.h": "c",
+			"services_config.h": "c",
+			"timer0_interface.h": "c"
 		}
 	}
 }
