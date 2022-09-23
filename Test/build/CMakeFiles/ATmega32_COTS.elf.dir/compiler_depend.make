@@ -4,8 +4,8 @@
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_config.h
 
@@ -73,8 +73,7 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Time
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_private.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_config.h
+  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_private.h
 
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_program.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
@@ -94,10 +93,8 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/
 CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_interface.h \
   /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h
 
 
@@ -127,21 +124,11 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_private.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/LIB/CPU_CORE/CPU_CORE_interface.h:
-
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_program.c:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_program.c:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_interface.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_private.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_interface.h:
-
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_config.h:
 
@@ -149,9 +136,17 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_interface.h:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_interface.h:
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_program.c:
 
-/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c:
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_private.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_interface.h:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h:
 
@@ -168,6 +163,8 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: ../main.c \
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/HC_05/HC05_config.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c:
+
+/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_program.c:
 
