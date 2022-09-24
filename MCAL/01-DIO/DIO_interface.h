@@ -34,6 +34,8 @@ ERROR_enumSTATE SetPort_enumValue     (u8 Copy_u8Port , u8 Copy_u8Value);
 ERROR_enumSTATE SetPin_enumDirection  (u8 Copy_u8Port ,u8 Copy_u8Pin , u8 Copy_u8Direction);
 ERROR_enumSTATE SetPin_enumValue      (u8 Copy_u8Port ,u8 Copy_u8Pin , u8 Copy_u8Value);
 
+ERROR_enumSTATE TOGPin_enumValue      (u8 Copy_u8Port ,u8 Copy_u8Pin );
+
 ERROR_enumSTATE GetPort_enumValue     (u8 Copy_u8Port,u8 *COPY_u8ptrDATA );
 ERROR_enumSTATE GetPin_enumValue      (u8 Copy_u8Port, u8 Copy_u8Pin,u8 *COPY_u8ptrDATA );
 

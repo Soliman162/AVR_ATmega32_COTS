@@ -16,7 +16,9 @@
 			"services_interface.h": "c",
 			"services_private.h": "c",
 			"services_config.h": "c",
-			"timer0_interface.h": "c"
+			"timer0_interface.h": "c",
+			"std_types.h": "c",
+			"7_segment_interface.h": "c"
 		}
 	}
 }

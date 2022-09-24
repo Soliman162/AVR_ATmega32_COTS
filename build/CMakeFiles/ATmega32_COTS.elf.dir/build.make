@@ -167,19 +167,19 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLC
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c.s"
 	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c.s
 
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o: CMakeFiles/ATmega32_COTS.elf.dir/flags.make
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o: CMakeFiles/ATmega32_COTS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o -MF CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o.d -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o -c /home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o: CMakeFiles/ATmega32_COTS.elf.dir/flags.make
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o: CMakeFiles/ATmega32_COTS.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building C object CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o -MF CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o.d -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o -c /home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c
 
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.i"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c > CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.i
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c > CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.i
 
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.s"
-	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.s
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.s
 
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o: CMakeFiles/ATmega32_COTS.elf.dir/flags.make
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c
@@ -265,10 +265,24 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.s"
 	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.s
 
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o: CMakeFiles/ATmega32_COTS.elf.dir/flags.make
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o: CMakeFiles/ATmega32_COTS.elf.dir/compiler_depend.ts
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o -MF CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o.d -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o -c /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c
+
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing C source to CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.i"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -E /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c > CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.i
+
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling C source to assembly CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.s"
+	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -S /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.s
+
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o: CMakeFiles/ATmega32_COTS.elf.dir/flags.make
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o: CMakeFiles/ATmega32_COTS.elf.dir/compiler_depend.ts
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building C object CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building C object CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o"
 	/usr/bin/avr-gcc $(C_DEFINES) $(C_INCLUDES) $(C_FLAGS) -MD -MT CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o -MF CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o.d -o CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o -c /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c
 
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.i: cmake_force
@@ -288,13 +302,14 @@ ATmega32_COTS_elf_OBJECTS = \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c.o" \
-"CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o" \
+"CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o" \
+"CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o" \
 "CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o"
 
 # External object files for target ATmega32_COTS.elf
@@ -307,17 +322,18 @@ ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AV
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LDR/LDR_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c.o
-ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/SSD/SSD_program.c.o
+ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/7_Segment/7_Segment_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/02-UART/UART_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/04-Timer1/TIMER1_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/06-WDT/WDT_program.c.o
+ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/build.make
 ATmega32_COTS.elf: CMakeFiles/ATmega32_COTS.elf.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Linking C executable ATmega32_COTS.elf"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Linking C executable ATmega32_COTS.elf"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/ATmega32_COTS.elf.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.

@@ -39,3 +39,8 @@ void LED_voidOFF(LED_config *Copy_ptrLED)
         SetPin_enumValue(Copy_ptrLED->LED_u8PORT,Copy_ptrLED->LED_u8PIN,DIO_HIGH);
     }
 }
+
+void LED_voidTOG(LED_config *Copy_ptrLED)
+{
+    TOGPin_enumValue(Copy_ptrLED->LED_u8PORT, Copy_ptrLED->LED_u8PIN);
+}

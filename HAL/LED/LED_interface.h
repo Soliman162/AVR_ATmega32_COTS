@@ -21,6 +21,9 @@ void LED_voidInit(LED_config *Copy_ptrLED);
 void LED_voidON(LED_config *Copy_ptrLED);
 void LED_voidOFF(LED_config *Copy_ptrLED);
 
+void LED_voidTOG(LED_config *Copy_ptrLED);
+
+
 
 
 #endif

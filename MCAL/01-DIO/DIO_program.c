@@ -4,7 +4,6 @@
 
 #include "DIO_interface.h"
 #include "DIO_private.h"
-#include "DIO_config.h"
 
 
 ERROR_enumSTATE SetPort_enumDirection (u8 Copy_u8Port , u8 Copy_u8Direction){
@@ -136,7 +135,36 @@ ERROR_enumSTATE SetPin_enumValue     (u8 Copy_u8Port ,u8 Copy_u8Pin , u8 Copy_u8
 		return LOCerror_enumState;
 }
 
-////////////////////////////////////////////////////////////////
+/////////////////////////////////////////////////////////////////////////////////////////////
+ERROR_enumSTATE TOGPin_enumValue      (u8 Copy_u8Port ,u8 Copy_u8Pin)
+{
+	ERROR_enumSTATE LOCerror_enumState =DIO_OK;
+
+		if( (Copy_u8Port<=PORTD) && (Copy_u8Port>=PORTA) ){
+			if(Copy_u8Pin>=PIN0 && Copy_u8Pin<=PIN7 ){
+				switch (Copy_u8Port){
+
+						case(PORTA):
+										TOGBIT (PORTA_REG,Copy_u8Pin);
+										break;
+						case(PORTB):
+										TOGBIT (PORTB_REG,Copy_u8Pin);
+										break;
+						case(PORTC):
+										TOGBIT (PORTC_REG,Copy_u8Pin);
+										break;
+						case(PORTD):
+										TOGBIT (PORTD_REG,Copy_u8Pin);
+										break;
+
+						default	   :   LOCerror_enumState =DIO_NOK; 	break;
+				}
+			}else{LOCerror_enumState =DIO_NOK;}
+		}else{LOCerror_enumState =DIO_NOK;}
+
+	return LOCerror_enumState;
+}
+/////////////////////////////////////////////////////////////////////////////////////////////
 ERROR_enumSTATE GetPort_u8Value     (u8 Copy_u8Port,u8 *COPY_u8ptrDATA ){
 
 	ERROR_enumSTATE LOCerror_enumState =DIO_OK;

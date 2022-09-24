@@ -24,7 +24,7 @@ add_executable( ${PROJECT_NAME}.elf
                             ${HAL_PATH}/LM35/LM35_program.c
                             ${HAL_PATH}/LDR/LDR_program.c
                             ${HAL_PATH}/CLCD/CLCD_program.c
-                            ${HAL_PATH}/SSD/SSD_program.c
+                            ${HAL_PATH}/7_Segment/7_Segment_program.c 
 
                             ${MCAL_PATH}/01-DIO/DIO_program.c
                             ${MCAL_PATH}/02-UART/UART_program.c
@@ -32,9 +32,9 @@ add_executable( ${PROJECT_NAME}.elf
                             ${MCAL_PATH}/04-Timer1/TIMER1_program.c  
                             ${MCAL_PATH}/05-Timer0/TIMER0_program.c                                                      
                             ${MCAL_PATH}/06-WDT/WDT_program.c
+                            ${MCAL_PATH}/07-EXINT/EXINT_program.c
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES/SERVICES_progarm.c
-
 )  
 
 target_include_directories( ${PROJECT_NAME}.elf PUBLIC
@@ -45,6 +45,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${MCAL_PATH}/04-Timer1
                             ${MCAL_PATH}/05-Timer0
                             ${MCAL_PATH}/06-WDT
+                            ${MCAL_PATH}/07-EXINT
 
                             ${HAL_PATH}/L298
                             ${HAL_PATH}/HC_05
@@ -52,7 +53,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${HAL_PATH}/LDR
                             ${HAL_PATH}/LM35
                             ${HAL_PATH}/CLCD
-                            ${HAL_PATH}/SSD
+                            ${HAL_PATH}/7_Segment
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../LIB
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES   
