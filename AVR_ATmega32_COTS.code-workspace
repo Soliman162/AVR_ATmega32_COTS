@@ -18,7 +18,9 @@
 			"services_config.h": "c",
 			"timer0_interface.h": "c",
 			"std_types.h": "c",
-			"7_segment_interface.h": "c"
+			"7_segment_interface.h": "c",
+			"exint_config.h": "c",
+			"exint_private.h": "c"
 		}
 	}
 }
