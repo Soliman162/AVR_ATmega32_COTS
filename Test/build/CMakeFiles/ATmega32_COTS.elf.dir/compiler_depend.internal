@@ -12,7 +12,7 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLC
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_program.c
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h
- /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_interface.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.h
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_interface.h
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_config.h
@@ -55,6 +55,14 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM3
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_interface.h
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_private.h
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_config.h
+
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.o
+ /home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c
+ /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_interface.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_private.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_config.h
 
 CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c
@@ -105,27 +113,25 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXIN
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h
- /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_interface.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.h
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_interface.h
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_private.h
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_config.h
 
-CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o
- /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c
+CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.o
+ /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h
- /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_interface.h
- /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h
- /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_interface.h
- /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_private.h
- /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_config.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/private.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/Config.h
 
 CMakeFiles/ATmega32_COTS.elf.dir/main.c.o
  /home/soliman/AVR/ATmega32/AVR_COTS/Test/main.c
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h
  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h
- /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_interface.h
+ /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.h
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h
  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_interface.h
  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h

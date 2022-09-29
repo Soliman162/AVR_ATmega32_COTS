@@ -336,6 +336,30 @@ home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.s
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.c.s
 
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.o: home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.i: home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.s: home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.c.s
+
 home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.o: home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.c.o
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.o
 
@@ -504,29 +528,29 @@ home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.s
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.c.s
 
-home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.o: home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.o
+home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.o: home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.o
 
 # target to build an object file
-home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.o
+home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.o
 
-home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.i: home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.i
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.i
+home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.i: home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.i
 
 # target to preprocess a source file
-home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.i
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.i
+home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.i
 
-home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.s: home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.s
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.s
+home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.s: home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.s
 
 # target to generate assembly for a file
-home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.s
-.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.c.s
+home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.s
 
 main.o: main.c.o
 .PHONY : main.o
@@ -585,6 +609,9 @@ help:
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_program.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_program.s"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_program.s"
@@ -606,9 +633,9 @@ help:
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/07-EXINT/EXINT_program.s"
-	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.o"
-	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.i"
-	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES_progarm.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.s"
 	@echo "... main.o"
 	@echo "... main.i"
 	@echo "... main.s"

@@ -3,9 +3,9 @@
 
 #include "TIMER0_interface.h"
 
-#include "SERVICES_interface.h"
-#include "SERVICES_private.h"
-#include "SERVICES_config.h"
+#include "SERVICES.h"
+#include "private.h"
+#include "Config.h"
 
 static inline void CPU_Core_voidEnable_INTERRUPT(void)
 {
