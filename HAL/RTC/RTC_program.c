@@ -1,8 +1,8 @@
-#include "../../SERVICES/BIT_MATH.h"
-#include "../../SERVICES/std_types.h"
+#include "BIT_MATH.h"
+#include "std_types.h"
 
-#include "../../MCAL/01-DIO/DIO_interface.h"
-#include "../../MCAL/07-I2C/I2C_interface.h"
+#include "DIO_interface.h"
+#include "I2C_interface.h"
 
 #include "RTC_interface.h"
 #include "RTC_private.h"

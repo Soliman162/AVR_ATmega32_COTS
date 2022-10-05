@@ -1,15 +1,9 @@
-/*
- * EEROM_program.c
- *
- *  Created on: Nov 14, 2021
- *      Author: DELL
- */
-#include "../../SERVICES/BIT_MATH.h"
-#include "../../SERVICES/std_types.h"
-#include  <util/delay.h>
+#include "BIT_MATH.h"
+#include "std_types.h"
+#include "SERVICES.h"
 
-#include "../../MCAL/01-DIO/DIO_interface.h"
-#include "../../MCAL/07-I2C/I2C_interface.h"
+#include "DIO_interface.h"
+#include "I2C_interface.h"
 
 #include "EEPROM_config.h"
 #include "EEPROM_interface.h"
@@ -20,7 +14,7 @@ void EEROM_voidInit(void)
 	/*Initialize I2C bus */
 	I2C_voidMaster_Init();
 	/*wait 100ms for EEPROM to get ready*/
-	_delay_ms(100);
+	_delay_us(100000);
 }
 void EEPROM_voidSend_Data(u8 Copy_u8EEPROMAddress,u8 Copy_u8Data)
 {
@@ -35,7 +29,7 @@ void EEPROM_voidSend_Data(u8 Copy_u8EEPROMAddress,u8 Copy_u8Data)
 	/*Send stop condition*/
 	I2C_voidTransmit_STOP_CONDITION();
 	/*Wait 100ms for EEPROM until it save the data */
-	_delay_ms(100);
+	_delay_us(100000);
 }
 void EEPROM_voidRead_Data(u8 Copy_u8EEPROMAddress,u8 *Copy_u8Data)
 {
@@ -53,5 +47,5 @@ void EEPROM_voidRead_Data(u8 Copy_u8EEPROMAddress,u8 *Copy_u8Data)
 	I2C_enumMaster_Receive_Data_Without_ACK( Copy_u8Data   );
 	/*Send stop condition*/
 	I2C_voidTransmit_STOP_CONDITION();
-	_delay_ms(100);
+	_delay_us(100000);
 }

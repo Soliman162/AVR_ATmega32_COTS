@@ -1,5 +1,5 @@
-#include "..\..\SERVICES\BIT_MATH.h"
-#include "..\..\SERVICES\std_types.h"
+#include "BIT_MATH.h"
+#include "std_types.h"
 
 #include "I2C_interface.h"
 #include "I2C_private.h"

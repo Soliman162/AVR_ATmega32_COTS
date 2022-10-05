@@ -34,6 +34,7 @@ add_executable( ${PROJECT_NAME}.elf
                             ${MCAL_PATH}/05-Timer0/TIMER0_program.c                                                      
                             ${MCAL_PATH}/06-WDT/WDT_program.c
                             ${MCAL_PATH}/07-EXINT/EXINT_program.c
+                            ${MCAL_PATH}/08-I2C/I2C_program.c
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES/SERVICES.c
 )  
@@ -47,6 +48,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${MCAL_PATH}/05-Timer0
                             ${MCAL_PATH}/06-WDT
                             ${MCAL_PATH}/07-EXINT
+                            ${MCAL_PATH}/08-I2C
 
                             ${HAL_PATH}/L298
                             ${HAL_PATH}/HC_05
