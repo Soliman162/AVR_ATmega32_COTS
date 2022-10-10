@@ -17,4 +17,11 @@ typedef long double f96;
 
 #define NULL 	((void *)0)
 
+typedef enum
+{
+    STD_TYPES_NOK=0,
+    STD_TYPES_OK=1
+
+}ERROR_enumSTATE;
+
 #endif

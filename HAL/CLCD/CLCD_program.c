@@ -3,6 +3,7 @@
 #include "SERVICES.h"
 
 #include "DIO_interface.h"
+#include "TIMER1_interface.h"
 
 #include "CLCD_interface.h"
 #include "CLCD_config.h"

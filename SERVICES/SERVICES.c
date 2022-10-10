@@ -1,7 +1,7 @@
 #include "std_types.h"
 #include "BIT_MATH.h"
 
-#include "TIMER0_interface.h"
+#include "TIMER1_interface.h"
 
 #include "SERVICES.h"
 #include "private.h"
@@ -19,7 +19,8 @@ static inline void CPU_Core_voidEnable_INTERRUPT(void)
 void Init_voidSystem(void)
 {
     CPU_Core_voidEnable_INTERRUPT();
-    Timer0_voidInit();
+    Timer1_voidInit();
+
 }
 
 

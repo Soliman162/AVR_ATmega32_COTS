@@ -1,13 +1,6 @@
 #ifndef MCAL_01_DIO_DIO_INTERFACE_H_
 #define MCAL_01_DIO_DIO_INTERFACE_H_
 
-typedef enum{
-
-	DIO_NOK,
-	DIO_OK
-
-}ERROR_enumSTATE;
-
 #define DIO_INPUT  0
 #define DIO_OUTPUT 1
 

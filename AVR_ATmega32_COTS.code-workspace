@@ -20,7 +20,14 @@
 			"std_types.h": "c",
 			"7_segment_interface.h": "c",
 			"exint_config.h": "c",
-			"exint_private.h": "c"
+			"exint_private.h": "c",
+			"dc_motor_interface.h": "c",
+			"dc_motor_private.h": "c",
+			"private.h": "c",
+			"services.h": "c",
+			"lm35_interface.h": "c",
+			"clcd_interface.h": "c",
+			"config.h": "c"
 		}
 	}
 }

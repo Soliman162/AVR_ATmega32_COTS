@@ -18,13 +18,19 @@
 			{
 				"command" : 0,
 				"file" : 0,
-				"line" : 77,
+				"line" : 73,
 				"parent" : 0
 			}
 		]
 	},
-	"id" : "remove::@6890427a1f51a3e7e1df",
-	"name" : "remove",
+	"dependencies" : 
+	[
+		{
+			"id" : "build::@6890427a1f51a3e7e1df"
+		}
+	],
+	"id" : "flash::@6890427a1f51a3e7e1df",
+	"name" : "flash",
 	"paths" : 
 	{
 		"build" : ".",
@@ -52,13 +58,13 @@
 		{
 			"backtrace" : 1,
 			"isGenerated" : true,
-			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles/remove",
+			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles/flash",
 			"sourceGroupIndex" : 0
 		},
 		{
 			"backtrace" : 0,
 			"isGenerated" : true,
-			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles/remove.rule",
+			"path" : "/home/soliman/AVR/ATmega32/AVR_COTS/build/CMakeFiles/flash.rule",
 			"sourceGroupIndex" : 1
 		}
 	],

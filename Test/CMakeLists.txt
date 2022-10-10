@@ -26,6 +26,7 @@ add_executable( ${PROJECT_NAME}.elf
                             ${HAL_PATH}/CLCD/CLCD_program.c
                             ${HAL_PATH}/7_Segment/7_Segment_program.c
                             ${HAL_PATH}/Switch/Switch_program.c 
+                            ${HAL_PATH}/DC_motor/DC_motor_program.c
  
                             ${MCAL_PATH}/01-DIO/DIO_program.c
                             ${MCAL_PATH}/02-UART/UART_program.c
@@ -58,7 +59,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${HAL_PATH}/CLCD
                             ${HAL_PATH}/7_Segment
                             ${HAL_PATH}/Switch
-
+                            ${HAL_PATH}/DC_motor
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../LIB
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES   
