@@ -31,6 +31,7 @@ int main(void)
         Temperature_u8 = LM35_u32Read_Temp();
 
         CLCD_voidSetPosition (CLCD_ROW_1 , CLCD_COL_1);
+        CLCD_voidSend_String("Fan is ");
         CLCD_voidSend_String(Fan_ptru8State);
         CLCD_voidSetPosition (CLCD_ROW_2 , CLCD_COL_1);
         CLCD_voidSend_String((u8 *)"Temp = ");
