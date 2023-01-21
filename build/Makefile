@@ -576,6 +576,198 @@ home/soliman/AVR/ATmega32/AVR_COTS/MCAL/08-I2C/I2C_program.c.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/MCAL/08-I2C/I2C_program.c.s
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/MCAL/08-I2C/I2C_program.c.s
 
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.c.s
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.c.s
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.c.s
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.c.s
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.c.s
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.c.s
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c.s
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.o: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.o
+
+# target to build an object file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.o:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.o
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.o
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.i: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.i
+
+# target to preprocess a source file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.i
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.i
+
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.s: home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.s
+
+# target to generate assembly for a file
+home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/ATmega32_COTS.elf.dir/build.make CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.s
+.PHONY : home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.c.s
+
 home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.o: home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.c.o
 .PHONY : home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.o
 
@@ -687,6 +879,30 @@ help:
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/08-I2C/I2C_program.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/08-I2C/I2C_program.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/MCAL/08-I2C/I2C_program.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/event_groups.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/heap_1.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/list.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/port.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/queue.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/stream_buffer.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.s"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.o"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.i"
+	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/OS/source/timers.s"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.o"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.i"
 	@echo "... home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.s"

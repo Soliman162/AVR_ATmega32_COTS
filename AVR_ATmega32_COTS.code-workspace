@@ -27,7 +27,8 @@
 			"services.h": "c",
 			"lm35_interface.h": "c",
 			"clcd_interface.h": "c",
-			"config.h": "c"
+			"config.h": "c",
+			"freertosconfig.h": "c"
 		}
 	}
 }

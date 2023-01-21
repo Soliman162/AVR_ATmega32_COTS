@@ -10,6 +10,8 @@
 #include "CLCD_interface.h"
 #include "LM35_interface.h"
 
+#include "FreeRTOSConfig.h"
+
 #define ON      "ON"
 #define OFF     "OFF"
 
@@ -18,6 +20,7 @@ int main(void)
 /************************Init the system*********************/
     Init_voidSystem();
 /***********************************************************/
+
 
     u8 *Fan_ptru8State = OFF;
     u8 Temperature_u8 = 0;

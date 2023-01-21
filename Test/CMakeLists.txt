@@ -12,6 +12,7 @@ set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL ")
 
 set(MCAL_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL )
 set(HAL_PATH   ${CMAKE_CURRENT_SOURCE_DIR}/../HAL  )
+set(OS_PATH   ${CMAKE_CURRENT_SOURCE_DIR}/../OS  )
 
 
 add_executable( ${PROJECT_NAME}.elf 
@@ -37,6 +38,15 @@ add_executable( ${PROJECT_NAME}.elf
                             ${MCAL_PATH}/07-EXINT/EXINT_program.c
                             ${MCAL_PATH}/08-I2C/I2C_program.c
 
+                            ${OS_PATH}/source/port.c
+                            ${OS_PATH}/source/event_groups.c  
+                            ${OS_PATH}/source/heap_1.c  
+                            ${OS_PATH}/source/list.c
+                            ${OS_PATH}/source/queue.c  
+                            ${OS_PATH}/source/stream_buffer.c  
+                            ${OS_PATH}/source/tasks.c  
+                            ${OS_PATH}/source/timers.c
+
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES/SERVICES.c
 )  
 
@@ -60,6 +70,8 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${HAL_PATH}/7_Segment
                             ${HAL_PATH}/Switch
                             ${HAL_PATH}/DC_motor
+
+                            ${OS_PATH}/include
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../LIB
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES   

@@ -7,10 +7,10 @@
 #define DIO_LOW  0
 #define DIO_HIGH 1
 
-#define PORTA  0
-#define PORTB  1
+#define PORTA   0
+#define PORTB   1
 #define PORTC   2
-#define PORTD  3
+#define PORTD   3
 
 #define PIN0 0
 #define PIN1 1
