@@ -28,7 +28,9 @@
 			"lm35_interface.h": "c",
 			"clcd_interface.h": "c",
 			"config.h": "c",
-			"freertosconfig.h": "c"
+			"freertosconfig.h": "c",
+			"l298_interface.h": "c",
+			"portmacro.h": "c"
 		}
 	}
 }

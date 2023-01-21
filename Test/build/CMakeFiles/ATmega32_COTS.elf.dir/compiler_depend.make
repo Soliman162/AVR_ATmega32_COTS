@@ -337,16 +337,10 @@ CMakeFiles/ATmega32_COTS.elf.dir/home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SER
   /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/Config.h
 
 CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/Test/main.c \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/SERVICES.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/05-Timer0/TIMER0_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/03-ADC/ADC_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/DC_motor/DC_motor_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/CLCD/CLCD_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LM35/LM35_interface.h \
-  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/FreeRTOSConfig.h \
+  /usr/lib/avr/include/stdlib.h \
+  /usr/lib/gcc/avr/5.4.0/include/stddef.h \
+  /usr/lib/avr/include/string.h \
+  /usr/lib/avr/include/avr/eeprom.h \
   /usr/lib/avr/include/avr/io.h \
   /usr/lib/avr/include/avr/sfr_defs.h \
   /usr/lib/avr/include/inttypes.h \
@@ -357,12 +351,31 @@ CMakeFiles/ATmega32_COTS.elf.dir/main.c.o: /home/soliman/AVR/ATmega32/AVR_COTS/T
   /usr/lib/avr/include/avr/common.h \
   /usr/lib/avr/include/avr/version.h \
   /usr/lib/avr/include/avr/fuse.h \
-  /usr/lib/avr/include/avr/lock.h
+  /usr/lib/avr/include/avr/lock.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/FreeRTOSConfig.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/FreeRTOS.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/FreeRTOSConfig.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/projdefs.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/portable.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/deprecated_definitions.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/portmacro.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/mpu_wrappers.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/task.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/list.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/portmacro.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/std_types.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/LIB/BIT_MATH.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/MCAL/01-DIO/DIO_interface.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/L298/L298_interface.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/LED/LED_interface.h \
+  /home/soliman/AVR/ATmega32/AVR_COTS/HAL/Switch/Switch_interface.h
 
 
 /home/soliman/AVR/ATmega32/AVR_COTS/SERVICES/Config.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/OS/include/stack_macros.h:
+
+/usr/lib/avr/include/avr/eeprom.h:
 
 /home/soliman/AVR/ATmega32/AVR_COTS/OS/source/tasks.c:
 
