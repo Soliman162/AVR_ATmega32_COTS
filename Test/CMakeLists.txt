@@ -7,7 +7,7 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_CXX_COMPILER avr-g++ CACHE STRING "C++ compiler" FORCE)
 set(CMAKE_C_COMPILER avr-gcc CACHE STRING "C compiler" FORCE)
 set(CMAKE_OBJCOPY      avr-objcopy CACHE STRING "avr-objcopy" FORCE)
-set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL ")
+set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL -g ")
 
 
 set(MCAL_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL )

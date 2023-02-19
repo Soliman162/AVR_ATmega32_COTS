@@ -30,7 +30,10 @@
 			"config.h": "c",
 			"freertosconfig.h": "c",
 			"l298_interface.h": "c",
-			"portmacro.h": "c"
+			"portmacro.h": "c",
+			"stepper_config.h": "c",
+			"stepper_interface.h": "c",
+			"stepper_private.h": "c"
 		}
 	}
 }
