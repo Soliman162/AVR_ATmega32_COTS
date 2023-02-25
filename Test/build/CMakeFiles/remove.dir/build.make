@@ -66,7 +66,7 @@ include CMakeFiles/remove.dir/compiler_depend.make
 # Include the progress variables for this target.
 include CMakeFiles/remove.dir/progress.make
 
-CMakeFiles/remove:
+CMakeFiles/remove: ATmega32_COTS.elf
 	rm -rf /home/soliman/Bare_metal_Embedded/AVR/ATmega32/AVR_COTS/Test/build/*
 
 remove: CMakeFiles/remove

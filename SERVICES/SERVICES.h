@@ -3,7 +3,7 @@
 
 
 void Init_voidSystem(void);
-#define _delay_us(Copy_u32MicroSeconds)    Timer1_voidDelay_Micro_Seconds(Copy_u32MicroSeconds)
+#define _delay_us(Copy_u32MicroSeconds)    Timer0_voidDelay_us(Copy_u32MicroSeconds)
 
 
 #endif

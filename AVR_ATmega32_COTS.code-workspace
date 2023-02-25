@@ -33,7 +33,8 @@
 			"portmacro.h": "c",
 			"stepper_config.h": "c",
 			"stepper_interface.h": "c",
-			"stepper_private.h": "c"
+			"stepper_private.h": "c",
+			"deprecated_definitions.h": "c"
 		}
 	}
 }

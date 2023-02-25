@@ -7,12 +7,12 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_CXX_COMPILER avr-g++ CACHE STRING "C++ compiler" FORCE)
 set(CMAKE_C_COMPILER avr-gcc CACHE STRING "C compiler" FORCE)
 set(CMAKE_OBJCOPY      avr-objcopy CACHE STRING "avr-objcopy" FORCE)
-set(CMAKE_C_FLAGS "-mmcu=atmega32 -O1 -DF_CPU=8000000UL -g ")
+set(CMAKE_C_FLAGS "-mmcu=atmega32 -O3 -DF_CPU=8000000UL ")
 
 
 set(MCAL_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL )
 set(HAL_PATH   ${CMAKE_CURRENT_SOURCE_DIR}/../HAL  )
-set(OS_PATH   ${CMAKE_CURRENT_SOURCE_DIR}/../OS  )
+set(OS_PATH    ${CMAKE_CURRENT_SOURCE_DIR}/../OS   )
 
 
 add_executable( ${PROJECT_NAME}.elf 
@@ -88,6 +88,7 @@ add_custom_target(flash
 )
 
 add_custom_target(remove
+                    DEPENDS ${PROJECT_NAME}.elf
                     COMMAND  rm -rf ${CMAKE_CURRENT_SOURCE_DIR}/build/*
 )
 
