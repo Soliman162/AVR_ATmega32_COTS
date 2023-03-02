@@ -22,16 +22,17 @@ void Stepper_voidInit(void)
 }
 void stepper_Rotate_CW(u8 Copy_StepMode, u16 degree )
 {
+    u8 Step_Index = (Copy_StepMode>4?1:0);
     u16 degree_counter = 0;
 
     while( degree_counter < degree )
     {
         for(u8 i=0;i<Copy_StepMode;i++)
         {
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_1,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 0 ));
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_2,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 1 ));
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_3,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 2 ));
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_4,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 3 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_1,GETBIT( Stepper_movment_Mode[Step_Index][i], 0 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_2,GETBIT( Stepper_movment_Mode[Step_Index][i], 1 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_3,GETBIT( Stepper_movment_Mode[Step_Index][i], 2 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_4,GETBIT( Stepper_movment_Mode[Step_Index][i], 3 ));
             _delay_us(MAX_DELAY*1000);
             degree_counter+=DEGREE_PER_STEP;
         }
@@ -39,16 +40,17 @@ void stepper_Rotate_CW(u8 Copy_StepMode, u16 degree )
 }
 void stepper_Rotate_CCW(u8 Copy_StepMode, u16 degree )
 {
+    u8 Step_Index = (Copy_StepMode>4?1:0);
     u16 degree_counter = 0;
 
     while( degree_counter < degree )
     {
         for(u8 i=Copy_StepMode;i>=0;i--)
         {
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_1,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 0 ));
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_2,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 1 ));
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_3,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 2 ));
-            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_4,GETBIT( Stepper_movment_Mode[Copy_StepMode-4][i], 3 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_1,GETBIT( Stepper_movment_Mode[Step_Index][i], 0 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_2,GETBIT( Stepper_movment_Mode[Step_Index][i], 1 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_3,GETBIT( Stepper_movment_Mode[Step_Index][i], 2 ));
+            SetPin_enumValue(STEPPER_MOTOR_PORT,COIL_PIN_4,GETBIT( Stepper_movment_Mode[Step_Index][i], 3 ));
             _delay_us(MAX_DELAY*1000);
             degree_counter+=DEGREE_PER_STEP;
         }
