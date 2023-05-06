@@ -1,5 +1,6 @@
 #include "std_types.h"
 #include "BIT_MATH.h"
+#include "Config.h"
 #include "SERVICES.h"
 
 #include "DIO_interface.h"
@@ -29,6 +30,8 @@ void CLCD_voidInit(void){
 	//DISPLAY ENTRY MODE
 	CLCD_voidSendCommand(0b00000010);
 	_delay_us(3000);
+
+
 
 }
 void CLCD_voidSend_Data(u8 Copy_u8Data){

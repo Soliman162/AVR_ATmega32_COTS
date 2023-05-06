@@ -1,267 +1,96 @@
-/*
- * FreeRTOS V202212.00
- * Copyright (C) 2020 Amazon.com, Inc. or its affiliates.  All Rights Reserved.
- *
- * Permission is hereby granted, free of charge, to any person obtaining a copy of
- * this software and associated documentation files (the "Software"), to deal in
- * the Software without restriction, including without limitation the rights to
- * use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of
- * the Software, and to permit persons to whom the Software is furnished to do so,
- * subject to the following conditions:
- *
- * The above copyright notice and this permission notice shall be included in all
- * copies or substantial portions of the Software.
- *
- * THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- * IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS
- * FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR
- * COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER
- * IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN
- * CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.
- *
- * https://www.FreeRTOS.org
- * https://github.com/FreeRTOS
- *
- */
-
-/*
- * Creates all the demo application tasks, then starts the scheduler.  The WEB
- * documentation provides more details of the demo application tasks.
- *
- * Main. c also creates a task called "Check".  This only executes every three
- * seconds but has the highest priority so is guaranteed to get processor time.
- * Its main function is to check that all the other tasks are still operational.
- * Each task that does not flash an LED maintains a unique count that is
- * incremented each time the task successfully completes its function.  Should
- * any error occur within such a task the count is permanently halted.  The
- * check task inspects the count of each task to ensure it has changed since
- * the last time the check task executed.  If all the count variables have
- * changed all the tasks are still executing error free, and the check task
- * toggles an LED.  Should any task contain an error at any time the LED toggle
- * will stop.
- *
- * The LED flash and communications test tasks do not maintain a count.
- */
-
-/*
-Changes from V1.2.0
-
-	+ Changed the baud rate for the serial test from 19200 to 57600.
-
-Changes from V1.2.3
-
-	+ The integer and comtest tasks are now used when the cooperative scheduler
-	  is being used.  Previously they were only used with the preemptive
-	  scheduler.
-
-Changes from V1.2.5
-
-	+ Set the baud rate to 38400.  This has a smaller error percentage with an
-	  8MHz clock (according to the manual).
-
-Changes from V2.0.0
-
-	+ Delay periods are now specified using variables and constants of
-	  TickType_t rather than unsigned long.
-
-Changes from V2.6.1
-
-	+ The IAR and WinAVR AVR ports are now maintained separately.
-
-*/
-
-#include <stdlib.h>
-#include <string.h>
-#define GCC_MEGA_AVR
-#ifdef GCC_MEGA_AVR
-	/* EEPROM routines used only with the WinAVR compiler. */
-	#include <avr/eeprom.h>
-#endif
-
-/* Scheduler include files. */
-#include "FreeRTOSConfig.h"
-#include "FreeRTOS.h"
-#include "task.h"
-#include "portmacro.h"
-
-
 /* COTS headers */
 #include "std_types.h"
 #include "BIT_MATH.h"
 
+#include "SERVICES.h"
+
 #include "DIO_interface.h"
+#include "TIMER0_interface.h"
+#include "TIMER1_interface.h"
+#include "TIMER2_interface.h"
+#include "TIMER1_private.h"
+#include "CLCD_interface.h"
 
-#include "L298_interface.h"
-#include "LED_interface.h"
-#include "Switch_interface.h"
+u8 flag=0;
+u8 Counter = 0;
+u64 Snap[3] = {0};
 
-
-/* Priority definitions for most of the tasks in the demo application.  Some
-tasks just use the idle priority. */
-#define mainLED_TASK_PRIORITY			( tskIDLE_PRIORITY + 1 )
-#define mainCOM_TEST_PRIORITY			( tskIDLE_PRIORITY + 2 )
-#define mainQUEUE_POLL_PRIORITY			( tskIDLE_PRIORITY + 2 )
-#define mainCHECK_TASK_PRIORITY			( tskIDLE_PRIORITY + 3 )
-
-/* Baud rate used by the serial port tasks. */
-#define mainCOM_TEST_BAUD_RATE			( ( unsigned long ) 38400 )
-
-/* LED used by the serial port tasks.  This is toggled on each character Tx,
-and mainCOM_TEST_LED + 1 is toggles on each character Rx. */
-#define mainCOM_TEST_LED				( 4 )
-
-/* LED that is toggled by the check task.  The check task periodically checks
-that all the other tasks are operating without error.  If no errors are found
-the LED is toggled.  If an error is found at any time the LED is never toggles
-again. */
-#define mainCHECK_TASK_LED				( 7 )
-
-/* The period between executions of the check task. */
-#define mainCHECK_PERIOD				( ( TickType_t ) 3000 / portTICK_PERIOD_MS  )
-
-/* An address in the EEPROM used to count resets.  This is used to check that
-the demo application is not unexpectedly resetting. */
-#define mainRESET_COUNT_ADDRESS			( ( void * ) 0x50 )
-
-/* Task Delay Time */
-#define TOGLED_DELAY        1000
-
-/*
- * The task function for the "Check" task.
- */
-static void vErrorChecks( void *pvParameters );
-
-/*
- * Checks the unique counts of other tasks to ensure they are still operational.
- * Flashes an LED if everything is okay.
- */
-static void prvCheckOtherTasksAreStillRunning( void );
-
-/*
- * Called on boot to increment a count stored in the EEPROM.  This is used to
- * ensure the CPU does not reset unexpectedly.
- */
-static void prvIncrementResetCount( void );
-
-
-TaskHandle_t Tog_LED_TASK_Handle = NULL;
-
-void Tog_led_Task(void * pvParameters)
+void TIMER1_ICU_ISR(void)
 {
-    TickType_t TogLED_LastWakeTime ;
-    LED_config Test_LED = {PORTA,PIN0,STATE_HIGH};
-    LED_voidInit(&Test_LED);
-
-    TogLED_LastWakeTime = xTaskGetTickCount();
-    for (;;)
-    {
-        LED_voidTOG(&Test_LED);
-        vTaskDelayUntil(TogLED_LastWakeTime ,TOGLED_DELAY );
-    }
-    
+	if( flag==0 )
+	{
+		Snap[0] = ICR1L_REG;
+		Counter=0;
+		Timer1_voidICU_EdgeSelector(ICU_FALLING_EDGE);
+	}
+	else if ( flag==1 )
+	{
+		Snap[1] = Counter*TIMER1_OVER_FLOW_VALUE +ICR1L_REG;
+		Timer1_voidICU_EdgeSelector(ICU_RISING_EDGE);
+	}
+	else if( flag==2 )
+	{
+		Snap[2] = Counter*TIMER1_OVER_FLOW_VALUE +ICR1L_REG;
+		Timer1_voidDisableInterrupt(TIMER1_ICU);
+		Timer1_voidDisableInterrupt(TIMER1_OVF);
+	}
+	flag++;
 }
 
-/*
- * The idle hook is unused.
- */
-void vApplicationIdleHook( void );
-
+void TIMER1_OVF_ISR(void)
+{
+	Counter++;
+}
 /*-----------------------------------------------------------*/
 
-short main( void )
+int main(void)
 {
-	prvIncrementResetCount();
+	u32 Freq = 0;
+	u32 Duty_Cycle = 0;
+	u8 Freq_string[10];
+	u8 Duty_Cycle_string[10];
 
-	/* Setup the LED's for output. */
-	//vParTestInitialise();
+	Init_voidSystem();
+	TIMER2_voidInit();
+	CLCD_voidInit();
 
-	/* Create the standard demo tasks. */
-/* 	vStartIntegerMathTasks( tskIDLE_PRIORITY );
-	vAltStartComTestTasks( mainCOM_TEST_PRIORITY, mainCOM_TEST_BAUD_RATE, mainCOM_TEST_LED );
-	vStartPolledQueueTasks( mainQUEUE_POLL_PRIORITY );
-	vStartRegTestTasks(); */
+	// pwm direction 
+	SetPin_enumDirection(PORTB,PIN3,DIO_OUTPUT);
+	// ICU pin
+	SetPin_enumDirection(PORTD,PIN6,DIO_INPUT);
 
-	/* Create the tasks defined within this file. */
-	//xTaskCreate( vErrorChecks, "Check", configMINIMAL_STACK_SIZE, NULL, mainCHECK_TASK_PRIORITY, NULL );
+	Timer0_voidSet_Duty_Cycle(50);
 
-    xTaskCreate( Tog_led_Task, "Tog_led", configMINIMAL_STACK_SIZE, NULL, (tskIDLE_PRIORITY + 4), Tog_LED_TASK_Handle );
+	Timer0_voidInit();
+	Timer1_voidInit_OVF();
 
-	/* In this port, to use preemptive scheduler define configUSE_PREEMPTION
-	as 1 in portmacro.h.  To use the cooperative scheduler define
-	configUSE_PREEMPTION as 0. */
-	vTaskStartScheduler();
+	Timer1_voidICU_EdgeSelector(ICU_RISING_EDGE);
+	Timer1_voidEnableInterrupt(TIMER1_ICU,TIMER1_ICU_ISR);
+	Timer1_voidEnableInterrupt(TIMER1_OVF,TIMER1_OVF_ISR);
+
+	while(1)
+	{
+		if( flag>=3 )
+		{
+			flag=0;
+
+			Freq = 8000000/(Snap[2] - Snap[0]);
+			Duty_Cycle = ((Snap[1]-Snap[0])/(Snap[2] - Snap[0]))*100;
+
+			CLCD_voidSetPosition(CLCD_ROW_1,CLCD_COL_1);
+			CLCD_void_Send_Number(Freq);
+			CLCD_voidSend_String((u8 *)"HZ");
+
+			CLCD_voidSetPosition(CLCD_ROW_2,CLCD_COL_1);
+			CLCD_void_Send_Number(Duty_Cycle);
+			CLCD_voidSend_String((u8 *)"-/-");
+
+			TIMER1_voidCLRFlag(TIMER1_ICU);
+			TIMER1_voidCLRFlag(TIMER1_OVF);
+			Timer1_voidEnableInterrupt(TIMER1_ICU,TIMER1_ICU_ISR);
+			Timer1_voidEnableInterrupt(TIMER1_OVF,TIMER1_OVF_ISR);
+		}
+	}
 
 	return 0;
 }
-/*-----------------------------------------------------------*/
-
-static void vErrorChecks( void *pvParameters )
-{
-static volatile unsigned long ulDummyVariable = 3UL;
-
-	/* The parameters are not used. */
-	( void ) pvParameters;
-
-	/* Cycle for ever, delaying then checking all the other tasks are still
-	operating without error. */
-	for( ;; )
-	{
-		vTaskDelay( mainCHECK_PERIOD );
-
-		/* Perform a bit of 32bit maths to ensure the registers used by the
-		integer tasks get some exercise. The result here is not important -
-		see the demo application documentation for more info. */
-		ulDummyVariable *= 3;
-
-		prvCheckOtherTasksAreStillRunning();
-	}
-}
-/*-----------------------------------------------------------*/
-
-static void prvCheckOtherTasksAreStillRunning( void )
-{
-static portBASE_TYPE xErrorHasOccurred = pdFALSE;
-
-	if( xAreIntegerMathsTaskStillRunning() != pdTRUE )
-	{
-		xErrorHasOccurred = pdTRUE;
-	}
-
-	if( xAreComTestTasksStillRunning() != pdTRUE )
-	{
-		xErrorHasOccurred = pdTRUE;
-	}
-
-	if( xArePollingQueuesStillRunning() != pdTRUE )
-	{
-		xErrorHasOccurred = pdTRUE;
-	}
-
-	if( xAreRegTestTasksStillRunning() != pdTRUE )
-	{
-		xErrorHasOccurred = pdTRUE;
-	}
-
-	if( xErrorHasOccurred == pdFALSE )
-	{
-		/* Toggle the LED if everything is okay so we know if an error occurs even if not
-		using console IO. */
-		vParTestToggleLED( mainCHECK_TASK_LED );
-	}
-}
-/*-----------------------------------------------------------*/
-
-static void prvIncrementResetCount( void )
-{
-unsigned char ucCount;
-
-	eeprom_read_block( &ucCount, mainRESET_COUNT_ADDRESS, sizeof( ucCount ) );
-	ucCount++;
-	eeprom_write_byte( mainRESET_COUNT_ADDRESS, ucCount );
-}
-/*-----------------------------------------------------------*/
-
-void vApplicationIdleHook( void )
-{
-}
-

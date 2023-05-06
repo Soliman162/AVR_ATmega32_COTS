@@ -28,11 +28,11 @@
 /***************************************************************************************/
 
 /************************************* Prescaller value *************************************/
-#define NO_PRESCALLER             0b00000001
-#define PRESCALLER_8              0b00000010
-#define PRESCALLER_64             0b00000011
-#define PRESCALLER_256            0b00000100
-#define PRESCALLER_1024           0b00000101
+#define TIMER0_NO_PRESCALLER             0b00000001
+#define TIMER0_PRESCALLER_8              0b00000010
+#define TIMER0_PRESCALLER_64             0b00000011
+#define TIMER0_PRESCALLER_256            0b00000100
+#define TIMER0_PRESCALLER_1024           0b00000101
 /***************************************************************************************/
 
 

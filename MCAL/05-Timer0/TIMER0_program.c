@@ -12,6 +12,7 @@ void Timer0_voidInit(void)
     /*OVF mode - prescaler 8*/
     //TCCR0_REG = 0b00000010;
     TCCR0_REG = TIMER0_MODE | OC0_MODE | PRESCALLER_VALUE ;
+    //TCNT0_REG = 0;
 }
 
 void Timer0_voidDelay_us(u32 Copy_u32DelayTime)
@@ -47,7 +48,7 @@ void Timer0_voidSet_Duty_Cycle( u8 Copy_u8Duty_Cycle )
 
             OCR0_REG = ((Copy_u8Duty_Cycle*256)/100)-1;
 
-        #elif  OC0_MODE ==                  /*INVERTED*/
+        #elif  OC0_MODE == SET_ON_COMPARE  /*INVERTED*/
 
             OCR0_REG = 255-((Copy_u8Duty_Cycle*256)/100);   
 
@@ -59,7 +60,7 @@ void Timer0_voidSet_Duty_Cycle( u8 Copy_u8Duty_Cycle )
 
             OCR0_REG = ((Copy_u8Duty_Cycle*255)/100) ;
 
-        #elif  OC0_MODE ==                  /*INVERTED*/
+        #elif  OC0_MODE == SET_ON_COMPARE   /*INVERTED*/
 
             OCR0_REG = 255-((Copy_u8Duty_Cycle*255)/100) ;  
 

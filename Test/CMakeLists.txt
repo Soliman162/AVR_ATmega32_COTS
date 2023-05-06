@@ -1,4 +1,4 @@
-CMAKE_MINIMUM_REQUIRED(VERSION 3.22)
+CMAKE_MINIMUM_REQUIRED(VERSION 3.16)
 
 PROJECT(ATmega32_COTS)
 
@@ -7,7 +7,7 @@ set(CMAKE_SYSTEM_NAME Generic)
 set(CMAKE_CXX_COMPILER avr-g++ CACHE STRING "C++ compiler" FORCE)
 set(CMAKE_C_COMPILER avr-gcc CACHE STRING "C compiler" FORCE)
 set(CMAKE_OBJCOPY      avr-objcopy CACHE STRING "avr-objcopy" FORCE)
-set(CMAKE_C_FLAGS "-mmcu=atmega32 -O3 -DF_CPU=8000000UL ")
+set(CMAKE_C_FLAGS "-mmcu=atmega32 -O0 -DF_CPU=8000000UL ")
 
 
 set(MCAL_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL )
@@ -37,15 +37,16 @@ add_executable( ${PROJECT_NAME}.elf
                             ${MCAL_PATH}/06-WDT/WDT_program.c
                             ${MCAL_PATH}/07-EXINT/EXINT_program.c
                             ${MCAL_PATH}/08-I2C/I2C_program.c
+                            ${MCAL_PATH}/09-Timer2/TIMER2_program.c
 
-                            ${OS_PATH}/source/port.c
-                            ${OS_PATH}/source/event_groups.c  
-                            ${OS_PATH}/source/heap_1.c  
-                            ${OS_PATH}/source/list.c
-                            ${OS_PATH}/source/queue.c  
-                            ${OS_PATH}/source/stream_buffer.c  
-                            ${OS_PATH}/source/tasks.c  
-                            ${OS_PATH}/source/timers.c
+                            #${OS_PATH}/source/port.c
+                            #${OS_PATH}/source/event_groups.c  
+                            #${OS_PATH}/source/heap_1.c  
+                            #${OS_PATH}/source/list.c
+                            #${OS_PATH}/source/queue.c  
+                            #${OS_PATH}/source/stream_buffer.c  
+                            #${OS_PATH}/source/tasks.c  
+                            #${OS_PATH}/source/timers.c
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES/SERVICES.c
 )  
@@ -60,6 +61,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${MCAL_PATH}/06-WDT
                             ${MCAL_PATH}/07-EXINT
                             ${MCAL_PATH}/08-I2C
+                            ${MCAL_PATH}/09-Timer2
 
                             ${HAL_PATH}/L298
                             ${HAL_PATH}/HC_05
@@ -71,7 +73,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${HAL_PATH}/Switch
                             ${HAL_PATH}/DC_motor
 
-                            ${OS_PATH}/include
+                            #${OS_PATH}/include
 
                             ${CMAKE_CURRENT_SOURCE_DIR}/../LIB
                             ${CMAKE_CURRENT_SOURCE_DIR}/../SERVICES   

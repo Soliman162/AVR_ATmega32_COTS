@@ -8,6 +8,8 @@ void UART_voidTransmit_Char(u8 Copy_u8Data);
 u8 * UART_u8ptrReceive_String(void);
 void UART_voidTransmit_String(u8 *Copy_u8Data);
 
+void UART_voidTransmit_Float_Number(f64 Copy_Number);
+
 
 
 

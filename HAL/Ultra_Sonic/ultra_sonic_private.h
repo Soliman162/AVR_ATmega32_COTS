@@ -1,0 +1,5 @@
+#ifndef ULTRA_SONIC_PRIVATE 
+#define ULTRA_SONIC_PRIVATE
+
+
+#endif

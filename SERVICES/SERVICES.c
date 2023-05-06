@@ -19,8 +19,6 @@ static inline void CPU_Core_voidEnable_INTERRUPT(void)
 void Init_voidSystem(void)
 {
     CPU_Core_voidEnable_INTERRUPT();
-    Timer0_voidInit();
-
 }
 
 

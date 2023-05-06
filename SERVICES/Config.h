@@ -9,7 +9,10 @@
  *      DISABLE
  * 
  */
-#define  GLOBAL_INTERRUPT_STATE      DISABLE
+#define  GLOBAL_INTERRUPT_STATE      ENABLE
+
+
+#define OS      0
 
 
 

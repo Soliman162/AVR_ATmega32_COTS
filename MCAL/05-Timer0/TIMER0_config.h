@@ -25,13 +25,13 @@
 /**
  * OPtions:-
  * 
- *       NO_PRESCALLER  
- *       PRESCALLER_8   
- *       PRESCALLER_64  
- *       PRESCALLER_256 
- *       PRESCALLER_1024
+ *       TIMER0_NO_PRESCALLER  
+ *       TIMER0_PRESCALLER_8   
+ *       TIMER0_PRESCALLER_64  
+ *       TIMER0_PRESCALLER_256 
+ *       TIMER0_PRESCALLER_1024
  */
-#define PRESCALLER_VALUE    PRESCALLER_64
+#define PRESCALLER_VALUE    TIMER0_PRESCALLER_8
 
 
 #endif

@@ -2,3 +2,5 @@ build/
 .vscode/ 
 Test/build/ 
 AVR_ATmega32_COTS.code-workspace
+Datasheet_Atmega32.pdf
+save.txt
