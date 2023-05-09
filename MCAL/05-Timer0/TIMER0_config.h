@@ -9,7 +9,7 @@
  *      FAST_PWM            
  *      PHASE_CORRECT_PWM   
  */
-#define TIMER0_MODE     NORMAL
+#define TIMER0_MODE     FAST_PWM
 
 /**
  * 
@@ -20,7 +20,7 @@
  *      SET_ON_COMPARE         //Inverted PWM
  * 
  */
-#define OC0_MODE  DISCONNECTED  
+#define OC0_MODE    CLEAR_ON_COMPARE
 
 /**
  * OPtions:-

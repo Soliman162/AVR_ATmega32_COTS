@@ -11,7 +11,7 @@ void Timer1_voidInit_OVF(void)
 {
     TCCR1A_REG = 0b00000000;
     TCCR1B_REG = 0 | TIMER1_PRESCALLER;
-    //TCNT1_L_H_REG = 0;
+    TCNT1_L_H_REG = 0;
 }
 
 void Timer1_voidICU_EdgeSelector(u8 Copy_Edge)

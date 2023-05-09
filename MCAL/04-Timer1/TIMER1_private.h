@@ -4,10 +4,10 @@
 /***************************************************Timer1 Registers macros****************************************************/
 #define TCCR1A_REG      *((volatile u8 *)0x4F)
 #define TCCR1B_REG      *((volatile u8 *)0x4E)
-#define TCNT1_L_H_REG   *((volatile u16*)0x4C)
-#define OCR1AL_REG      *((volatile u16*)0x4A)
-#define OCR1BL_REG      *((volatile u16*)0x48)
-#define ICR1L_REG       *((volatile u16*)0x46)
+#define TCNT1_L_H_REG   *((volatile u16 *)0x4C)
+#define OCR1AL_REG      *((volatile u16 *)0x4A)
+#define OCR1BL_REG      *((volatile u16 *)0x48)
+#define ICR1L_REG       *((volatile u16 *)0x46)
 #define TIMSK_REG       *((volatile u8 *)0x59)
 #define TIFR_REG        *((volatile u8 *)0x58)
 /******************************************************************************************************************************/
