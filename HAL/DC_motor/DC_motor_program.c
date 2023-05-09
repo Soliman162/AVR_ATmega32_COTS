@@ -8,7 +8,6 @@
 #include "DC_motor_private.h"
 #include "DC_motor_config.h"
 
-
 void DC_Motor_voidInit(void)
 {
     Timer0_voidInit();

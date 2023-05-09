@@ -17,10 +17,10 @@ void Timer0_voidInit(void)
 
 void Timer0_voidDelay_us(u32 Copy_u32DelayTime)
 {
+    /*Set the value of the counter*/
+    TCNT0_REG = 0;
     while(Copy_u32DelayTime >= TIMER0_OVER_FLOW_VALUE)
     {
-        /*Set the value of the counter*/
-        TCNT0_REG = 0;
         /*wait for the flag to be set*/
         while(GETBIT(TIFR_REG,TIMER0_OVF_FLAG_BIT) != 1);
         /*CLR the Flag */

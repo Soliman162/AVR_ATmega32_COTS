@@ -9,7 +9,6 @@ set(CMAKE_C_COMPILER avr-gcc CACHE STRING "C compiler" FORCE)
 set(CMAKE_OBJCOPY      avr-objcopy CACHE STRING "avr-objcopy" FORCE)
 set(CMAKE_C_FLAGS "-mmcu=atmega32 -O0 -DF_CPU=8000000UL ")
 
-
 set(MCAL_PATH  ${CMAKE_CURRENT_SOURCE_DIR}/../MCAL )
 set(HAL_PATH   ${CMAKE_CURRENT_SOURCE_DIR}/../HAL  )
 set(OS_PATH    ${CMAKE_CURRENT_SOURCE_DIR}/../OS   )
@@ -28,6 +27,7 @@ add_executable( ${PROJECT_NAME}.elf
                             ${HAL_PATH}/7_Segment/7_Segment_program.c
                             ${HAL_PATH}/Switch/Switch_program.c 
                             ${HAL_PATH}/DC_motor/DC_motor_program.c
+                            ${HAL_PATH}/stepper_motor/stepper_program.c
  
                             ${MCAL_PATH}/01-DIO/DIO_program.c
                             ${MCAL_PATH}/02-UART/UART_program.c
@@ -72,6 +72,7 @@ target_include_directories( ${PROJECT_NAME}.elf PUBLIC
                             ${HAL_PATH}/7_Segment
                             ${HAL_PATH}/Switch
                             ${HAL_PATH}/DC_motor
+                            ${HAL_PATH}/stepper_motor                            
 
                             #${OS_PATH}/include
 

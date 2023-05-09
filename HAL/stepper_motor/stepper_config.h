@@ -31,6 +31,6 @@
  * @brief 
  * rotate degree for each step
  */
-#define DEGREE_PER_STEP     2     
+#define DEGREE_PER_STEP     1.8F     
 
 #endif

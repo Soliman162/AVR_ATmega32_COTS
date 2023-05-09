@@ -9,11 +9,13 @@
 #include "TIMER1_interface.h"
 #include "TIMER2_interface.h"
 #include "TIMER1_private.h"
-#include "CLCD_interface.h"
 
-u8 flag=0;
-u8 Counter = 0;
-u64 Snap[3] = {0};
+#include "CLCD_interface.h"
+#include "stepper_interface.h"
+
+volatile u8 flag=0;
+volatile u32 Counter = 0;
+volatile u64 Snap[3] = {1,2,3};
 
 void TIMER1_ICU_ISR(void)
 {
@@ -42,41 +44,45 @@ void TIMER1_OVF_ISR(void)
 	Counter++;
 }
 /*-----------------------------------------------------------*/
-
 int main(void)
 {
-	u32 Freq = 0;
-	u32 Duty_Cycle = 0;
-	u8 Freq_string[10];
-	u8 Duty_Cycle_string[10];
-
-	Init_voidSystem();
-	TIMER2_voidInit();
-	CLCD_voidInit();
+	volatile u32 Freq = 0;
+	volatile u32 Duty_Cycle = 0;
+	volatile u64 T_u64total = 0;
+	volatile u64 T_u64on = 0;
 
 	// pwm direction 
 	SetPin_enumDirection(PORTB,PIN3,DIO_OUTPUT);
 	// ICU pin
 	SetPin_enumDirection(PORTD,PIN6,DIO_INPUT);
-
+	
+	Init_voidSystem();
+	TIMER2_voidInit();
+	
 	Timer0_voidSet_Duty_Cycle(50);
-
 	Timer0_voidInit();
-	Timer1_voidInit_OVF();
 
 	Timer1_voidICU_EdgeSelector(ICU_RISING_EDGE);
 	Timer1_voidEnableInterrupt(TIMER1_ICU,TIMER1_ICU_ISR);
 	Timer1_voidEnableInterrupt(TIMER1_OVF,TIMER1_OVF_ISR);
+	Timer1_voidInit_OVF();
+
+	CLCD_voidInit();
+	Clear_voidCLCD();
 
 	while(1)
 	{
-		if( flag>=3 )
+		if( flag==3 )
 		{
 			flag=0;
 
-			Freq = 8000000/(Snap[2] - Snap[0]);
-			Duty_Cycle = ((Snap[1]-Snap[0])/(Snap[2] - Snap[0]))*100;
+			T_u64total = Snap[2] - Snap[0];
+			T_u64on = Snap[1]-Snap[0];
 
+			Freq = (u32)8000000/T_u64total;
+			Duty_Cycle = (T_u64on/T_u64total)*100;
+
+			Clear_voidCLCD();
 			CLCD_voidSetPosition(CLCD_ROW_1,CLCD_COL_1);
 			CLCD_void_Send_Number(Freq);
 			CLCD_voidSend_String((u8 *)"HZ");
@@ -91,6 +97,5 @@ int main(void)
 			Timer1_voidEnableInterrupt(TIMER1_OVF,TIMER1_OVF_ISR);
 		}
 	}
-
 	return 0;
 }

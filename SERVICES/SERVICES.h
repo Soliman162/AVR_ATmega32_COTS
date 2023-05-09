@@ -2,6 +2,8 @@
 #define CPU_CORE_INTERFACE_H
 
 #include "Config.h"
+#include "TIMER0_interface.h"
+#include "TIMER2_interface.h"
 
 void Init_voidSystem(void);
 

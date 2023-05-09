@@ -27,9 +27,9 @@ void Timer1_voidICU_EdgeSelector(u8 Copy_Edge)
 
 void Timer1_voidDelay_Micro_Seconds(u32 Copy_u32Delay_micro_Seconds)
 {
+    TCNT1_L_H_REG = 0;
     while (Copy_u32Delay_micro_Seconds > TIMER1_OVER_FLOW_VALUE)
     {
-        TCNT1_L_H_REG = 0;
         /*check over flow*/
         while( GETBIT(TIFR_REG,TIMER1_OVERFLOW_FLAG_BIT_NUM) == 0 );
         /*Clear flag*/
